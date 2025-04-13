@@ -1,0 +1,56 @@
+/* Add hover effect using CSS */
+path {
+    pointer-events: all;
+}
+
+path:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    fill: #fb846e;
+}
+
+/* Container for the map */
+.map-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Container for state labels */
+.state-labels-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Style for state labels */
+.state-label {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    pointer-events: none;
+    text-align: center;
+}
+
+/* Make sure the map is responsive */
+.usa-map svg {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Add some padding around the map */
+.container {
+    padding: 20px;
+}
+
+/* Hide state labels for tablets and smaller screens */
+@media (max-width: 1024px) {
+    .state-label {
+        display: none; /* Hide state labels on tablets and smaller screens */
+    }
+}
