@@ -80,4 +80,3 @@ This project serves as a demonstration of building a landing page for Ropstam us
 Feel free to explore, modify, or improve the project as needed.
 
 ---
-````
